@@ -8,7 +8,7 @@ def Trivia_Quizbot(username):
             print("\nAnswer the following questions:\n")
             random.choice(question)
 
-            user_score = 0  # Initialize user_score here
+            user_score = 0 
 
             for question_data in question:
                 print(question_data["question"])
@@ -41,7 +41,7 @@ def print_options(options):
 def validate_answer(user_answer, correct_option):
     try:
         user_answer = int(user_answer)
-        return user_answer == correct_option  # Remove the -1 here
+        return user_answer == correct_option 
     except ValueError:
         return False
 
